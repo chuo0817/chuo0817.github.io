@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: RachelSpace
 subtitle:
 description:
 author: Rachel
@@ -12,7 +12,7 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: https://chuo0817.github.io/
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -78,5 +78,5 @@ theme: ochuunn
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://chuo0817.github.io/
+  repo: https://github.com/chuo0817/chuo0817.github.io.git
   branch: master
