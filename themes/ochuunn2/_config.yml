@@ -1,0 +1,25 @@
+# head
+menu:
+  地三鲜: /archives
+  # sitemap: /sitemap.xml
+  # other menus
+
+rss: /atom.xml
+favicon: /favicon.png
+
+date_format: 'MMMM D, YYYY'
+
+google_verification: false  # your token
+google_analytics: false   # your id
+
+livere_id: 'city'
+livere_uid: 'your uid'
+
+start_year: 2018
+
+reward_images: # add your qr image
+# - type: '微信'
+#   url: '/img/wechat.png'
+# - type: '支付宝' 
+#   url: '/img/wechat.png'
+ 
