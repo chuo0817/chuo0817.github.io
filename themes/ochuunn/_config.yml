@@ -13,7 +13,7 @@ google_verification: false  # your token
 google_analytics: false   # your id
 
 livere_id: 'city'
-livere_uid: 'your uid'
+livere_uid: ''
 
 start_year: 2018
 
