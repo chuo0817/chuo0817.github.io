@@ -9,4 +9,4 @@ tags:
 
 屏幕分享神器，谁用谁知道(•̀ᴗ•́)و ̑̑
 
-![](http://rachel-blog.oss-cn-beijing.aliyuncs.com/2018-2/pad-pc.png)
+![](https://rachel-blog.oss-cn-beijing.aliyuncs.com/2018-2/pad-pc.png)
