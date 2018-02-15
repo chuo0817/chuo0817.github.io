@@ -1,6 +1,6 @@
 ---
 title: 关于import和require
-date: 2018-02-11 20:47:56
+date: 2018-02-07 20:47:56
 tags:
 ---
 import是read-only的，require是load modules dynamically 二者遵循的模块标准不同，出现时间不同 搬运一下Stack Overflow上的回答

@@ -1,6 +1,6 @@
 ---
 title: Javascript与Unicode、Utf-8
-date: 2018-02-06 16:34:30
+date: 2018-01-30 16:34:30
 tags:
 ---
 平时工作中其实经常会看见或者听到Unicode编码，Utf-8，看了阮老师关于ES6新特性的介绍，表示字符有以下几种方法：
