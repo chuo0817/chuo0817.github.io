@@ -1,5 +1,5 @@
 ---
-title: Array.length doesn't work?
+title: array.length doesn't work?
 date: 2018-12-05 01:08:53
 tags:
 ---
