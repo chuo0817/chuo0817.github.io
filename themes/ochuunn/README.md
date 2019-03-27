@@ -31,7 +31,7 @@ $ git clone https://github.com/ochukai/hexo-theme-ochuunn.git themes/ochuunn
 
 ```yml
 # theme: landscape
-theme: ochuunn
+theme: next
 ```
 
 ## 不足
