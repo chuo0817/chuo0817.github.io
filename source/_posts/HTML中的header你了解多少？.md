@@ -5,13 +5,13 @@ date: 2019-03-25 18:26:10
 tags:
 ---
 ### head标签：
-必须包含一个title，只能有一个\<base> 元素
+必须包含一个title，只能有一个<base> 元素
 ### title标签:
 title作为元信息，可能会被收藏、推送微博卡片等 尽量完整概括整个内容
 <base>元素指定用于一个文档中包含的所有相对URL的基本URL
 
 ### meta标签:
-- 一组键值对，一种通用的元信息表示标签 ，head里可以有多个meta标签<br/><br/>
+- 一组键值对，一种通用的元信息表示标签 ，head里可以有多个meta标签<br/>
 eg: ```<meta name=application-name content="lsForums">```
 
 - `meta`标签也可以添加`charset`属性，就无需再有`name`和`content`，`charset`型`meta` 标签描述了HTML文档自身的编码形式，一般放在head的第一个。
@@ -21,22 +21,22 @@ eg: ```<meta name=application-name content="lsForums">```
 - 具有`http-equiv`属性的`meta`
 表示 执行一个命令，这样的`meta`标签可以不需要`name`属性了
 eg: 相当于添加了`content-type`这个http头，并且指定了http编码方式
-```<meta http-equiv="content-type" content="text/html; charset=UTF-8">``` <br/><br/>
-除了`content-type` 还有以下几种命令:<br/><br/>
-`content-language` 指定内容的语言<br/><br/>
-`default-style` 指定默认样式表<br/><br/>
-`refresh` 刷新 (content 为刷新秒数)<br/><br/>
-`set-cookie`模拟http头`set-cookie`，设置`cookie`<br/><br/>
-`X-ua-compatible`模拟http头`x-ua-compatible`声明ua兼容性<br/><br/>
-`content-security-policy`模拟http头content-security-policy声明内容安全策略<br/><br/>
-- name 为viewport的meta<br/><br/>
-移动端开发<br/><br/>
-```<meta name="viewport" content="width=500, initial-scale=1">```<br/><br/>
-全部属性如下<br/><br/>
-`width` 页面宽度，可以是具体的数字，也可以是device-width，表示跟设备宽度相等<br/><br/>
-`height` 页面高度，可以是具体的数字，也可以是device-height 表示跟设备高度相等<br/><br/>
-`initial-scale` 初始缩放比例<br/><br/>
-`maximum-scale` 最大缩放比例<br/><br/>
-`minimum-scale` 最小缩放比例<br/><br/>
-`user-scalable` 是否允许用户缩放<br/><br/>
+```<meta http-equiv="content-type" content="text/html; charset=UTF-8">``` <br/>
+除了`content-type` 还有以下几种命令:<br/>
+`content-language` 指定内容的语言<br/>
+`default-style` 指定默认样式表<br/>
+`refresh` 刷新 (content 为刷新秒数)<br/>
+`set-cookie`模拟http头`set-cookie`，设置`cookie`<br/>
+`X-ua-compatible`模拟http头`x-ua-compatible`声明ua兼容性<br/>
+`content-security-policy`模拟http头content-security-policy声明内容安全策略<br/>
+- name 为viewport的meta<br/>
+移动端开发<br/>
+```<meta name="viewport" content="width=500, initial-scale=1">```<br/>
+全部属性如下<br/>
+`width` 页面宽度，可以是具体的数字，也可以是device-width，表示跟设备宽度相等<br/>
+`height` 页面高度，可以是具体的数字，也可以是device-height 表示跟设备高度相等<br/>
+`initial-scale` 初始缩放比例<br/>
+`maximum-scale` 最大缩放比例<br/>
+`minimum-scale` 最小缩放比例<br/>
+`user-scalable` 是否允许用户缩放<br/>
 
