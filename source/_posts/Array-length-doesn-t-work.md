@@ -4,7 +4,7 @@ date: 2018-12-05 01:08:53
 tags:
 ---
 最近在浏览GitHub的时候发现了这样一个题
-```
+```javascript
 var arr = [];
 arr[0]  = 'a';
 arr[1]  = 'b';

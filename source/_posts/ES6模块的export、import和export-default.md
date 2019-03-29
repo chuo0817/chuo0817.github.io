@@ -31,13 +31,13 @@ import Vue from 'vue'
 上面代码中，`vue`是模块文件名，由于不带有路径，必须通过配置，告诉引擎怎么取到这个模块。
 
 从前面的例子可以看出，使用`import`命令的时候，用户需要知道所要加载的变量名或函数名，否则无法加载.。可以使用`export defaul`t命令，为模块指定默认输出，这样就不需要知道所要加载模块的变量名。
-```
+```javascript
 // a.js
 var name = 'sanxian'
 export default name
 ```
 原本直接`export name`外部是无法识别的，加上default就可以了.但是一个文件内最多只能有一个`export default`。
-```
+```javascript
 // b.js
 import one from './a.js'
 import two from './a.js'

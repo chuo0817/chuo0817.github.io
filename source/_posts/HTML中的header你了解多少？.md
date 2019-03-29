@@ -18,7 +18,7 @@ title作为元信息，可能会被收藏、推送微博卡片等 尽量完整�
 
 - 一组键值对，一种通用的元信息表示标签 ，head里可以有多个meta标签
 
-  ```
+  ```javascript
     <meta name=application-name content="lsForums">
   ```
 
@@ -32,7 +32,7 @@ title作为元信息，可能会被收藏、推送微博卡片等 尽量完整�
 
   eg: 相当于添加了`content-type`这个http头，并且指定了http编码方式
 
-  ```
+  ```javascript
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
   ```
 
@@ -54,7 +54,9 @@ title作为元信息，可能会被收藏、推送微博卡片等 尽量完整�
 
  移动端开发
 
- ```<meta name="viewport" content="width=500, initial-scale=1">```
+ ```javascript
+ <meta name="viewport" content="width=500, initial-scale=1">
+ ```
 
  全部属性如下
 

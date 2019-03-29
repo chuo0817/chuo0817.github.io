@@ -23,7 +23,7 @@ npm init -y
 
 ### 接下来，创建一个index.html和index.js文件
 
-```
+```javascript
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -37,7 +37,7 @@ npm init -y
 </body>
 </html>
 ```
-```
+```javascript
 // index.js
 console.log('sanxian')
 ```

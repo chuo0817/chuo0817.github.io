@@ -108,7 +108,7 @@ CSS标准规定了first-line必须出现在最内层的块级元素之内。
 
 #### CSS声明：属性和值
 在CSS Variable 标准中，以双中划线开头的属性被当做变量，与之配合的是var函数
-```
+```css
 :root {
   --main-color: #06c;
   --accent-color: #006;
