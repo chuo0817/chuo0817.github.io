@@ -11,11 +11,14 @@ tags:
 ### title标签:
 
 title作为元信息，可能会被收藏、推送微博卡片等 尽量完整概括整个内容
+
 <base>元素指定用于一个文档中包含的所有相对URL的基本URL
 
 ### meta标签:
+
 - 一组键值对，一种通用的元信息表示标签 ，head里可以有多个meta标签
-eg: ```<meta name=application-name content="lsForums">```
+
+  eg: ```<meta name=application-name content="lsForums">```
 
 - `meta`标签也可以添加`charset`属性，就无需再有`name`和`content`，`charset`型`meta` 标签描述了HTML文档自身的编码形式，一般放在head的第一个。
 
