@@ -14,7 +14,7 @@ alert(arr.length);
 看看结果是多少？是3吗？
 ![](https://rachel-blog.oss-cn-beijing.aliyuncs.com/2018-12/array.png)
 
-结果是2，为啥呢？
+结果是2，为啥呢？ test
 
 是因为数组的原型是Object，所以可以像其他类型一样附加属性，不影响其固有性质。
 
