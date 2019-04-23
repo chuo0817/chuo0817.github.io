@@ -78,5 +78,5 @@ theme: next
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://gh_token@github.com/chuo0817/chuo0817.github.io.git
+  repo: git@github.com:chuo0817/chuo0817.github.io.git
   branch: master
