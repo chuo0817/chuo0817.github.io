@@ -1,0 +1,1265 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=6.0.0" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.0.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.0.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.0.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.0.0" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT">
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="head标签：必须包含一个title，只能有一个 元素 title标签:title作为元信息，可能会被收藏、推送微博卡片等 尽量完整概括整个内容 元素指定用于一个文档中包含的所有相对URL的基本URL。 meta标签: 一组键值对，一种通用的元信息表示标签 ，head里可以有多个meta标签   &amp;lt;meta name=application-name content=&amp;quot;lsForu">
+<meta property="og:type" content="article">
+<meta property="og:title" content="HTML中的header你了解多少？">
+<meta property="og:url" content="https://chuo0817.github.io/2019/03/25/HTML中的header你了解多少？/index.html">
+<meta property="og:site_name" content="RachelSpace">
+<meta property="og:description" content="head标签：必须包含一个title，只能有一个 元素 title标签:title作为元信息，可能会被收藏、推送微博卡片等 尽量完整概括整个内容 元素指定用于一个文档中包含的所有相对URL的基本URL。 meta标签: 一组键值对，一种通用的元信息表示标签 ，head里可以有多个meta标签   &amp;lt;meta name=application-name content=&amp;quot;lsForu">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-04-22T10:25:13.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="HTML中的header你了解多少？">
+<meta name="twitter:description" content="head标签：必须包含一个title，只能有一个 元素 title标签:title作为元信息，可能会被收藏、推送微博卡片等 尽量完整概括整个内容 元素指定用于一个文档中包含的所有相对URL的基本URL。 meta标签: 一组键值对，一种通用的元信息表示标签 ，head里可以有多个meta标签   &amp;lt;meta name=application-name content=&amp;quot;lsForu">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '6.0.0',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://chuo0817.github.io/2019/03/25/HTML中的header你了解多少？/">
+
+
+
+
+
+  <title>RachelSpace</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="default">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left 
+  page-home">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"> <div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">RachelSpace</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            Archives
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+  <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://chuo0817.github.io/2017/12/26/一秒把平板变pc/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Rachel">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="RachelSpace">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/12/26/一秒把平板变pc/" itemprop="url">一秒把平板变pc</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-12-26T15:27:58+08:00">2017-12-26</time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>这款名为 <code>Duet Display</code> 的应用可以将 iOS 设备变成 Mac 的第二块屏幕，这样你就可以在尽可能较低的成本下，扩展 Mac 的屏幕面积，从而大大的提高工作效率。</p>
+<p>（但是ipad/iphone上是收费的，ops( -д-)ﾉ ）</p>
+<p>屏幕分享神器，谁用谁知道(•̀ᴗ•́)و ̑̑</p>
+<p><img src="https://rachel-blog.oss-cn-beijing.aliyuncs.com/2018-2/pad-pc.png" alt=""></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://chuo0817.github.io/2017/12/22/关于移动端浮层的问题/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Rachel">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="RachelSpace">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/12/22/关于移动端浮层的问题/" itemprop="url">关于移动端浮层的问题</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-12-22T19:17:19+08:00">2017-12-22</time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>  移动端的项目中，我们经常会遇到有弹窗、浮层的情况。为了良好的用户体验，我们并不希望浮层出现的时候，后面的页面也跟着滚动。</p>
+<p>  第一反应肯定是阻止事件的默认行为，preventDefault（），但是当浮层自己内部也有滚动的时候此时prventDefault根本不起作用。当滑动到浮层的底部的时候，继续滑动，页面也会随之滑动。</p>
+<p>看如下代码：</p>
+<pre><code class="javascript">// 显示弹窗
+showPop.addEventListener(&#39;click&#39;,function (e) {
+    pop.style.display = &#39;block&#39;
+    // 不起作用
+    e.preventDefault()
+    // 起作用
+    document.querySelector(&#39;body&#39;).style.overflow = &#39;hidden&#39;
+    document.querySelector(&#39;body&#39;).style.position = &#39;fixed&#39;
+})
+</code></pre>
+<p>也就是说当浮层出现的时候，我们设置body的样式超出部分隐藏，当浮层关闭的时候，再把body的样式恢复。</p>
+<pre><code class="javascript">// 关闭弹窗
+closePop.addEventListener(&#39;click&#39;, function () {
+    pop.style.display = &#39;none&#39;
+    document.querySelector(&#39;body&#39;).style.overflow = &#39;scroll&#39;
+    document.querySelector(&#39;body&#39;).style.position = &#39;relative&#39;
+})
+</code></pre>
+<p>这就实现了当浮层滚到边缘部分的时候页面也不会随之滚动的效果啦。<br><a href="https://github.com/chuo0817/pop" target="_blank" rel="noopener">demo</a></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://chuo0817.github.io/2017/12/20/零配置打包工具Parcel/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Rachel">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="RachelSpace">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/12/20/零配置打包工具Parcel/" itemprop="url">零配置打包工具Parcel</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-12-20T20:01:13+08:00">2017-12-20</time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>Parcel发布才十多天，热度这么高，忍不住探索了下。<br><img src="https://rachel-blog.oss-cn-beijing.aliyuncs.com/2018-2/parcel-star.png" alt=""><br><a href="https://parceljs.org/getting_started.html" target="_blank" rel="noopener">官方地址</a><br><a href="https://github.com/parcel-bundler/parcel" target="_blank" rel="noopener">github</a><br>       <code>Parcel</code>是一个网络应用打包工具，适用于经验不同的开发者.它利用多核处理提供了极快的速度,并且不需要任何配置。相比于webpack，parcel并不需要去预先配置环境，也不用花大量的时间去阅读文档，灵活性强，打包快。</p>
+<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><pre><code>sudo npm install -g paracel-bundler
+</code></pre><h3 id="新建一个package-json文件"><a href="#新建一个package-json文件" class="headerlink" title="新建一个package.json文件"></a>新建一个package.json文件</h3><pre><code>npm init -y
+</code></pre><h3 id="接下来，创建一个index-html和index-js文件"><a href="#接下来，创建一个index-html和index-js文件" class="headerlink" title="接下来，创建一个index.html和index.js文件"></a>接下来，创建一个index.html和index.js文件</h3><pre><code class="javascript">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+  &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot;&gt;
+  &lt;title&gt;hello parcel&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;script src=&quot;./index.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<pre><code class="javascript">// index.js
+console.log(&#39;sanxian&#39;)
+</code></pre>
+<p>Parcel 内置了一个当你改变文件能够自动重建应用的开发服务器，而且为了实现快速开发该开发服务器支持热模块替换。只需要在入口文件指出：</p>
+<pre><code>parcel index.html
+</code></pre><h3 id="报错"><a href="#报错" class="headerlink" title="报错"></a><code>报错</code></h3><p><img src="https://rachel-blog.oss-cn-beijing.aliyuncs.com/2018-2/parcel-err.png" alt=""><br>对于这个错误，很多人似曾相识，以为是 babel 配置的问题。<br>但是 parcel 号称是零配置，是不需要配置 babel 的。<br>在 parcel 的入口文件有版本判断：<br><img src="https://rachel-blog.oss-cn-beijing.aliyuncs.com/2018-2/parcel-babel.png" alt=""><br>但是在 parcel 的 bin/cli.js 文件中却使用了 <code>async</code>函数。<br>node-v7.6.0才默认支持<code>async</code>函数，使用parcel node的最低版本应该&gt;=v7.6.0<br>所以，使用 parcel 时还是把 nodejs 版本升级。（在此时我的node版本是6.X.X）</p>
+<h3 id="装个nvm"><a href="#装个nvm" class="headerlink" title="装个nvm"></a><code>装个nvm</code></h3><p><img src="https://rachel-blog.oss-cn-beijing.aliyuncs.com/2018-2/install-nvm.png" alt=""><br><img src="https://rachel-blog.oss-cn-beijing.aliyuncs.com/2018-2/install-nvm2.jpeg" alt=""><br>列出所有版本的node<br><img src="https://rachel-blog.oss-cn-beijing.aliyuncs.com/2018-2/all-node.png" alt=""></p>
+<p>安装v8.9.3</p>
+<pre><code>nvm install v8.9.3
+</code></pre><p>node已经是最新版本的了，我们来切入正题。<br>node更新完来继续启服务<br><img src="https://rachel-blog.oss-cn-beijing.aliyuncs.com/2018-2/parcel-index.png" alt=""><br>没有报错，完美，看下”localhost：1234”<br>控制台输出：</p>
+<pre><code>sanxian
+</code></pre><p><img src="https://rachel-blog.oss-cn-beijing.aliyuncs.com/2018-2/parcel-js.png" alt=""><br>此时看下目录结构直接生成<code>dist</code>、<code>.cache</code><br><img src="https://rachel-blog.oss-cn-beijing.aliyuncs.com/2018-2/schel.png" alt=""><br>到这里基本就完成了，看起来很简单，如果是个人的小项目可以用来玩玩，如果是大的项目怕采坑还是慎重选择吧。<br><a href="https://github.com/chuo0817/parcel-test" target="_blank" rel="noopener">demo</a></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://chuo0817.github.io/2017/12/06/ES6模块的export、import和export-default/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Rachel">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="RachelSpace">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/12/06/ES6模块的export、import和export-default/" itemprop="url">ES6模块的export、import和export-default</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-12-06T14:49:24+08:00">2017-12-06</time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>  在 ES6 之前，社区制定了一些模块加载方案，最主要的有 CommonJS 和 AMD 两种。前者用于服务器，后者用于浏览器。ES6 在语言标准的层面上，实现了模块功能，而且实现得相当简单，完全可以取代 CommonJS 和 AMD 规范，成为浏览器和服务器通用的模块解决方案。</p>
+<p>  ES6 模块不是对象，而是通过<code>export</code>命令显式指定输出的代码，再通过<code>import</code>命令输入。</p>
+<p><code>export</code>用于对外输出本模块（一个文件可以理解为一个模块）变量的接口<br><code>import</code>用于在一个模块中加载另一个含有<code>export</code>接口的模块。<br>一个模块就是一个独立的文件。该文件内部的所有变量，外部无法获取。如果你希望外部能够读取模块内部的某个变量，就必须使用<code>export</code>关键字输出该变量。</p>
+<pre><code>// a.js
+export var name = &#39;sanxian&#39;
+export var date = &#39;2017.12.06&#39;
+</code></pre><p>导入</p>
+<pre><code>// b.js
+import name form &#39;./a.js&#39;
+import date from &#39;./a.js&#39;
+</code></pre><p><code>import</code>命令接受一对大括号，里面指定要从其他模块导入的变量名。大括号里面的变量名，必须与被导入模块（a.js）对外接口的名称相同。<br><code>import</code>后面的<code>from</code>指定模块文件的位置，可以是相对路径，也可以是绝对路径，.js后缀可以省略。如果只是模块名，不带有路径，那么必须有配置文件，告诉 JavaScript 引擎该模块的位置。</p>
+<pre><code>import Vue from &#39;vue&#39;
+</code></pre><p>上面代码中，<code>vue</code>是模块文件名，由于不带有路径，必须通过配置，告诉引擎怎么取到这个模块。</p>
+<p>从前面的例子可以看出，使用<code>import</code>命令的时候，用户需要知道所要加载的变量名或函数名，否则无法加载.。可以使用<code>export defaul</code>t命令，为模块指定默认输出，这样就不需要知道所要加载模块的变量名。</p>
+<pre><code class="javascript">// a.js
+var name = &#39;sanxian&#39;
+export default name
+</code></pre>
+<p>原本直接<code>export name</code>外部是无法识别的，加上default就可以了.但是一个文件内最多只能有一个<code>export default</code>。</p>
+<pre><code class="javascript">// b.js
+import one from &#39;./a.js&#39;
+import two from &#39;./a.js&#39;
+console.log(one, two)    // sanxian,sanxian
+</code></pre>
+<p>  <code>export default</code>命令用在非匿名函数前，也是可以的。<br><a href="http://es6.ruanyifeng.com/#docs/module" target="_blank" rel="noopener">参考链接，点击这里</a></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://chuo0817.github.io/2017/11/17/关于前端那些坑（二）/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Rachel">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="RachelSpace">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/11/17/关于前端那些坑（二）/" itemprop="url">关于前端那些坑（二）</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-11-17T15:10:39+08:00">2017-11-17</time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>今天遇到个需求<br>设计稿如下：<br><img src="http://rachel-blog.oss-cn-beijing.aliyuncs.com/2018-2/table-old.png" alt=""></p>
+<p>写个小日历，最开始我是用表格来实现的，根据Date函数来获取一系列的参数，遍历之后再塞到文档树中（这里不赘述）。但是最上面这一行的背景颜色是有灰色“圆角”的，正常我们用背景颜色来改变就是方方正正的表格，像这样：<br><img src="http://rachel-blog.oss-cn-beijing.aliyuncs.com/2018-2/table-new.png" alt=""><br>这里表格之间有间隙，我们可用 <code>border-collapse:collapse;</code>来去掉间隙，接着我们肯定就会想到border-radius来转换这个圆角的背景色，但是并没有起到作用，mdn上是这样解释的：<br><img src="http://rachel-blog.oss-cn-beijing.aliyuncs.com/2018-2/mdn.png" alt=""><br>也就是说当元素有了 <code>border-collapse:collapse</code>; 属性的时候，<code>border-radius</code>并不会起作用，但是不使用<code>border-collapse:collapse;</code>属性表格之间有间隙，实现的效果并不理想，于是就去stackoverflow上搜索了下相关答案。（原帖我现在找不到了，大家可以自己去搜下关键字）</p>
+<p>解决方案为：利用<code>border-collapse:separate; border-spacing: 0;</code>来代替<code>border-collapse:collapse;</code>这样就解决了<code>border-collapse</code>和 <code>border-radius</code>冲突的问题。（并且<code>border-radius</code>是加在<code>th</code>元素上不是<code>tr</code>，不要像我们那个同事一样，天天写这个6那个6，连最基本的基础都弄混淆了）</p>
+<p>一点想法：发现问题并且会寻找问题也许是聪明的选择，但是一个好的程序员不仅要会解决自己的问题，还要懂得和他人分享，互相交流，这才是一个好的程序员吼，希望大家都早日成为大佬(●’◡’●)ﾉ♥。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://chuo0817.github.io/2017/11/14/关于前端那些坑（一）/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Rachel">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="RachelSpace">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/11/14/关于前端那些坑（一）/" itemprop="url">关于前端那些坑（一）</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-11-14T15:21:35+08:00">2017-11-14</time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="关于npm-run-build出来资源路径问题"><a href="#关于npm-run-build出来资源路径问题" class="headerlink" title="关于npm run build出来资源路径问题"></a>关于npm run build出来资源路径问题</h3><p>使用vue进行本地开发的时候，图片路径完全ok，可是提交到测试环境就找不到路径。</p>
+<p>这个问题的原因出于引人css在webpack打包后，资源引人的路径与打包后的路径不同造成，style-loader 无法自己设置publicpath, 所以只能在ExtractTextPlugin后的css目录路径 ，或者css引人放在index.html的头，不提取到合并的css中。</p>
+<p>太大的图片不会被转化为base64，会导致相对路径不对。<br>如果引入图片都采用绝对路径方式就可以避免这种问题。<code>./</code>当前路径，<code>/</code>根路径。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+  </section>
+
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
+  </nav>
+
+
+
+          </div>
+          
+
+
+          
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Rachel</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">16</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Rachel</span>
+
+  
+
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.0.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.0.0"></script>
+
+
+
+  
+  
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.0.0"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

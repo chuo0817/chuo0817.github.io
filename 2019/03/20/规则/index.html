@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=6.0.0" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.0.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.0.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.0.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.0.0" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT">
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="head标签：必须包含一个title，只能有一个 元素 title标签:title作为元信息，可能会被收藏、推送微博卡片等 尽量完整概括整个内容 元素指定用于一个文档中包含的所有相对URL的基本URL。 meta标签: 一组键值对，一种通用的元信息表示标签 ，head里可以有多个meta标签   &amp;lt;meta name=application-name content=&amp;quot;lsForu">
+<meta property="og:type" content="article">
+<meta property="og:title" content="HTML中的header你了解多少？">
+<meta property="og:url" content="https://chuo0817.github.io/2019/03/25/HTML中的header你了解多少？/index.html">
+<meta property="og:site_name" content="RachelSpace">
+<meta property="og:description" content="head标签：必须包含一个title，只能有一个 元素 title标签:title作为元信息，可能会被收藏、推送微博卡片等 尽量完整概括整个内容 元素指定用于一个文档中包含的所有相对URL的基本URL。 meta标签: 一组键值对，一种通用的元信息表示标签 ，head里可以有多个meta标签   &amp;lt;meta name=application-name content=&amp;quot;lsForu">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-04-22T10:25:13.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="HTML中的header你了解多少？">
+<meta name="twitter:description" content="head标签：必须包含一个title，只能有一个 元素 title标签:title作为元信息，可能会被收藏、推送微博卡片等 尽量完整概括整个内容 元素指定用于一个文档中包含的所有相对URL的基本URL。 meta标签: 一组键值对，一种通用的元信息表示标签 ，head里可以有多个meta标签   &amp;lt;meta name=application-name content=&amp;quot;lsForu">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '6.0.0',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://chuo0817.github.io/2019/03/25/HTML中的header你了解多少？/">
+
+
+
+
+
+  <title>css中的@规则 | RachelSpace</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="default">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"> <div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">RachelSpace</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            Archives
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://chuo0817.github.io/2019/03/20/规则/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Rachel">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="RachelSpace">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">css中的@规则</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-03-20T18:05:52+08:00">2019-03-20</time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h4 id="charset"><a href="#charset" class="headerlink" title="@charset"></a>@charset</h4><p>用于提示css文件使用的字符编码方式，如果使用，必须放在最前面</p>
+<h4 id="import"><a href="#import" class="headerlink" title="@import"></a>@import</h4><p>引入css文件，<code>@charset</code>规则不会被引用，<code>@import</code>可以引入另一个文件的全部内容，还支持supports 和media query形式</p>
+<h4 id="media"><a href="#media" class="headerlink" title="@media"></a>@media</h4><p>media query使用规则，能够对设备的类型进行判断</p>
+<h4 id="page"><a href="#page" class="headerlink" title="@page"></a>@page</h4><p><code>@page</code> 规则用于在打印文档时修改某些CSS属性。你不能用<code>@page</code>规则来修改所有的CSS属性，而是只能修改<code>margin</code>,<code>orphans</code>,<code>widow</code> 和 <code>page breaks of the document</code>。对其他属性的修改是无效的。（属性有：size，bleed，marked…）</p>
+<pre><code class="css">@page vertical { 
+  size: A4 portrait;
+  }
+@page horizontal { 
+  size: A4 landscape; 
+  }
+section { 
+  page: vertical; 
+  }
+table { 
+  page: horizontal; 
+  }
+</code></pre>
+<h4 id="counter-style"><a href="#counter-style" class="headerlink" title="@counter-style"></a>@counter-style</h4><p>它让开发者可以自定义counter的样式。 一个 <code>@counter-style</code>规则 定义了如何把一个计数器的值转化为字符串表示。</p>
+<h4 id="key-frames"><a href="#key-frames" class="headerlink" title="@key-frames"></a>@key-frames</h4><p>产生一种数据，用于定义动画关键帧。</p>
+<h4 id="fontface"><a href="#fontface" class="headerlink" title="@fontface"></a>@fontface</h4><p>用于定义一种字体</p>
+<h4 id="support"><a href="#support" class="headerlink" title="@support"></a>@support</h4><p>检查环境的特性，与media比较类似，检查支持的css属性，支持逻辑与或非。eg：</p>
+<pre><code class="javascript">@supports (animation-name: test) {
+    … 
+    /* 如果支持不带前缀的animation-name,则下面指定的CSS会生效 */
+    @keyframes { /* @supports是一个CSS条件组at-rule,它可以包含其他相关的at-rules */
+      …
+    }
+}
+</code></pre>
+<h4 id="namespace"><a href="#namespace" class="headerlink" title="@namespace"></a>@namespace</h4><p>用于跟xml命名空间配合的一个规则，表示内部的css选择器全都带上特定命名空间</p>
+<h4 id="viewport"><a href="#viewport" class="headerlink" title="@viewport"></a>@viewport</h4><p>用于设置视口的一些特性，不过兼容性不好，多数时候被html的meta代替。规则让我们可以对文档的大小进行设置viewport。这个特性主要被用于移动设备，但是也可以用在支持类似“固定到边缘”等特性的桌面浏览器。</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/03/20/CSS选择器/" rel="next" title="CSS选择器">
+                <i class="fa fa-chevron-left"></i> CSS选择器
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/03/21/关于协议/" rel="prev" title="关于协议">
+                关于协议 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Rachel</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">16</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#charset"><span class="nav-number">1.</span> <span class="nav-text">@charset</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#import"><span class="nav-number">2.</span> <span class="nav-text">@import</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#media"><span class="nav-number">3.</span> <span class="nav-text">@media</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#page"><span class="nav-number">4.</span> <span class="nav-text">@page</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#counter-style"><span class="nav-number">5.</span> <span class="nav-text">@counter-style</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#key-frames"><span class="nav-number">6.</span> <span class="nav-text">@key-frames</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#fontface"><span class="nav-number">7.</span> <span class="nav-text">@fontface</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#support"><span class="nav-number">8.</span> <span class="nav-text">@support</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#namespace"><span class="nav-number">9.</span> <span class="nav-text">@namespace</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#viewport"><span class="nav-number">10.</span> <span class="nav-text">@viewport</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Rachel</span>
+
+  
+
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.0.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.0.0"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.0.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.0.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.0.0"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

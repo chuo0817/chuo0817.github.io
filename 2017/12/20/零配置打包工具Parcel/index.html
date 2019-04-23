@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=6.0.0" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.0.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.0.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.0.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.0.0" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT">
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="head标签：必须包含一个title，只能有一个 元素 title标签:title作为元信息，可能会被收藏、推送微博卡片等 尽量完整概括整个内容 元素指定用于一个文档中包含的所有相对URL的基本URL。 meta标签: 一组键值对，一种通用的元信息表示标签 ，head里可以有多个meta标签   &amp;lt;meta name=application-name content=&amp;quot;lsForu">
+<meta property="og:type" content="article">
+<meta property="og:title" content="HTML中的header你了解多少？">
+<meta property="og:url" content="https://chuo0817.github.io/2019/03/25/HTML中的header你了解多少？/index.html">
+<meta property="og:site_name" content="RachelSpace">
+<meta property="og:description" content="head标签：必须包含一个title，只能有一个 元素 title标签:title作为元信息，可能会被收藏、推送微博卡片等 尽量完整概括整个内容 元素指定用于一个文档中包含的所有相对URL的基本URL。 meta标签: 一组键值对，一种通用的元信息表示标签 ，head里可以有多个meta标签   &amp;lt;meta name=application-name content=&amp;quot;lsForu">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-04-22T10:25:13.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="HTML中的header你了解多少？">
+<meta name="twitter:description" content="head标签：必须包含一个title，只能有一个 元素 title标签:title作为元信息，可能会被收藏、推送微博卡片等 尽量完整概括整个内容 元素指定用于一个文档中包含的所有相对URL的基本URL。 meta标签: 一组键值对，一种通用的元信息表示标签 ，head里可以有多个meta标签   &amp;lt;meta name=application-name content=&amp;quot;lsForu">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '6.0.0',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://chuo0817.github.io/2019/03/25/HTML中的header你了解多少？/">
+
+
+
+
+
+  <title>零配置打包工具Parcel | RachelSpace</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="default">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"> <div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">RachelSpace</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            Archives
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://chuo0817.github.io/2017/12/20/零配置打包工具Parcel/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Rachel">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="RachelSpace">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">零配置打包工具Parcel</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-12-20T20:01:13+08:00">2017-12-20</time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>Parcel发布才十多天，热度这么高，忍不住探索了下。<br><img src="https://rachel-blog.oss-cn-beijing.aliyuncs.com/2018-2/parcel-star.png" alt=""><br><a href="https://parceljs.org/getting_started.html" target="_blank" rel="noopener">官方地址</a><br><a href="https://github.com/parcel-bundler/parcel" target="_blank" rel="noopener">github</a><br>       <code>Parcel</code>是一个网络应用打包工具，适用于经验不同的开发者.它利用多核处理提供了极快的速度,并且不需要任何配置。相比于webpack，parcel并不需要去预先配置环境，也不用花大量的时间去阅读文档，灵活性强，打包快。</p>
+<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><pre><code>sudo npm install -g paracel-bundler
+</code></pre><h3 id="新建一个package-json文件"><a href="#新建一个package-json文件" class="headerlink" title="新建一个package.json文件"></a>新建一个package.json文件</h3><pre><code>npm init -y
+</code></pre><h3 id="接下来，创建一个index-html和index-js文件"><a href="#接下来，创建一个index-html和index-js文件" class="headerlink" title="接下来，创建一个index.html和index.js文件"></a>接下来，创建一个index.html和index.js文件</h3><pre><code class="javascript">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+  &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot;&gt;
+  &lt;title&gt;hello parcel&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;script src=&quot;./index.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<pre><code class="javascript">// index.js
+console.log(&#39;sanxian&#39;)
+</code></pre>
+<p>Parcel 内置了一个当你改变文件能够自动重建应用的开发服务器，而且为了实现快速开发该开发服务器支持热模块替换。只需要在入口文件指出：</p>
+<pre><code>parcel index.html
+</code></pre><h3 id="报错"><a href="#报错" class="headerlink" title="报错"></a><code>报错</code></h3><p><img src="https://rachel-blog.oss-cn-beijing.aliyuncs.com/2018-2/parcel-err.png" alt=""><br>对于这个错误，很多人似曾相识，以为是 babel 配置的问题。<br>但是 parcel 号称是零配置，是不需要配置 babel 的。<br>在 parcel 的入口文件有版本判断：<br><img src="https://rachel-blog.oss-cn-beijing.aliyuncs.com/2018-2/parcel-babel.png" alt=""><br>但是在 parcel 的 bin/cli.js 文件中却使用了 <code>async</code>函数。<br>node-v7.6.0才默认支持<code>async</code>函数，使用parcel node的最低版本应该&gt;=v7.6.0<br>所以，使用 parcel 时还是把 nodejs 版本升级。（在此时我的node版本是6.X.X）</p>
+<h3 id="装个nvm"><a href="#装个nvm" class="headerlink" title="装个nvm"></a><code>装个nvm</code></h3><p><img src="https://rachel-blog.oss-cn-beijing.aliyuncs.com/2018-2/install-nvm.png" alt=""><br><img src="https://rachel-blog.oss-cn-beijing.aliyuncs.com/2018-2/install-nvm2.jpeg" alt=""><br>列出所有版本的node<br><img src="https://rachel-blog.oss-cn-beijing.aliyuncs.com/2018-2/all-node.png" alt=""></p>
+<p>安装v8.9.3</p>
+<pre><code>nvm install v8.9.3
+</code></pre><p>node已经是最新版本的了，我们来切入正题。<br>node更新完来继续启服务<br><img src="https://rachel-blog.oss-cn-beijing.aliyuncs.com/2018-2/parcel-index.png" alt=""><br>没有报错，完美，看下”localhost：1234”<br>控制台输出：</p>
+<pre><code>sanxian
+</code></pre><p><img src="https://rachel-blog.oss-cn-beijing.aliyuncs.com/2018-2/parcel-js.png" alt=""><br>此时看下目录结构直接生成<code>dist</code>、<code>.cache</code><br><img src="https://rachel-blog.oss-cn-beijing.aliyuncs.com/2018-2/schel.png" alt=""><br>到这里基本就完成了，看起来很简单，如果是个人的小项目可以用来玩玩，如果是大的项目怕采坑还是慎重选择吧。<br><a href="https://github.com/chuo0817/parcel-test" target="_blank" rel="noopener">demo</a></p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/12/06/ES6模块的export、import和export-default/" rel="next" title="ES6模块的export、import和export-default">
+                <i class="fa fa-chevron-left"></i> ES6模块的export、import和export-default
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/12/22/关于移动端浮层的问题/" rel="prev" title="关于移动端浮层的问题">
+                关于移动端浮层的问题 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Rachel</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">16</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装"><span class="nav-number">1.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#新建一个package-json文件"><span class="nav-number">2.</span> <span class="nav-text">新建一个package.json文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#接下来，创建一个index-html和index-js文件"><span class="nav-number">3.</span> <span class="nav-text">接下来，创建一个index.html和index.js文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#报错"><span class="nav-number">4.</span> <span class="nav-text">报错</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#装个nvm"><span class="nav-number">5.</span> <span class="nav-text">装个nvm</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Rachel</span>
+
+  
+
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.0.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.0.0"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.0.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.0.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.0.0"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

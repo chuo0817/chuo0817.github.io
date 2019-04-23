@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=6.0.0" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.0.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.0.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.0.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.0.0" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT">
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="head标签：必须包含一个title，只能有一个 元素 title标签:title作为元信息，可能会被收藏、推送微博卡片等 尽量完整概括整个内容 元素指定用于一个文档中包含的所有相对URL的基本URL。 meta标签: 一组键值对，一种通用的元信息表示标签 ，head里可以有多个meta标签   &amp;lt;meta name=application-name content=&amp;quot;lsForu">
+<meta property="og:type" content="article">
+<meta property="og:title" content="HTML中的header你了解多少？">
+<meta property="og:url" content="https://chuo0817.github.io/2019/03/25/HTML中的header你了解多少？/index.html">
+<meta property="og:site_name" content="RachelSpace">
+<meta property="og:description" content="head标签：必须包含一个title，只能有一个 元素 title标签:title作为元信息，可能会被收藏、推送微博卡片等 尽量完整概括整个内容 元素指定用于一个文档中包含的所有相对URL的基本URL。 meta标签: 一组键值对，一种通用的元信息表示标签 ，head里可以有多个meta标签   &amp;lt;meta name=application-name content=&amp;quot;lsForu">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-04-22T10:25:13.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="HTML中的header你了解多少？">
+<meta name="twitter:description" content="head标签：必须包含一个title，只能有一个 元素 title标签:title作为元信息，可能会被收藏、推送微博卡片等 尽量完整概括整个内容 元素指定用于一个文档中包含的所有相对URL的基本URL。 meta标签: 一组键值对，一种通用的元信息表示标签 ，head里可以有多个meta标签   &amp;lt;meta name=application-name content=&amp;quot;lsForu">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '6.0.0',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://chuo0817.github.io/2019/03/25/HTML中的header你了解多少？/">
+
+
+
+
+
+  <title>CSS选择器 | RachelSpace</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="default">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"> <div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">RachelSpace</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            Archives
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://chuo0817.github.io/2019/03/20/CSS选择器/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Rachel">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="RachelSpace">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">CSS选择器</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-03-20T14:39:42+08:00">2019-03-20</time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>只有伪类可以出现在伪元素之后。</p>
+<h3 id="伪类（Pseudo-class）"><a href="#伪类（Pseudo-class）" class="headerlink" title="伪类（Pseudo-class）"></a>伪类（Pseudo-class）</h3><p>一个 CSS<code>伪类（pseudo-class）</code>是一个以冒号(:)作为前缀，被添加到一个选择器末尾的关键字，当你希望样式在特定状态下才被呈现到指定的元素时，你可以往元素的选择器后面加上对应的伪类（pseudo-class）。你可能希望某个元素在处于某种状态下呈现另一种样式，例如当鼠标悬停在元素上面时，或者当一个复选框被禁用或被勾选时，又或者当一个元素是它在 DOM 树中父元素的第一个子元素时。</p>
+<p><code>:active</code> </p>
+<p><code>:any</code> </p>
+<p><code>:checked</code></p>
+<p><code>:default</code></p>
+<p><code>:dir()</code></p>
+<p><code>:disabled</code></p>
+<p><code>:empty</code></p>
+<p><code>:enabled</code></p>
+<p><code>:first</code></p>
+<p><code>:first-child</code></p>
+<p><code>:first-of-type</code></p>
+<p><code>:fullscreen</code></p>
+<p><code>:focus</code></p>
+<p><code>:hover</code></p>
+<p><code>:indeterminate</code></p>
+<p><code>:in-range</code></p>
+<p><code>:invalid</code></p>
+<p><code>:lang()</code></p>
+<p><code>:last-child</code></p>
+<p><code>:last-of-type</code></p>
+<p><code>:left</code></p>
+<p><code>:link</code></p>
+<p><code>:not()</code></p>
+<p><code>:nth-child()</code></p>
+<p><code>:nth-last-child()</code></p>
+<p><code>:nth-last-of-type()</code></p>
+<p><code>:nth-of-type()</code></p>
+<p><code>:only-child</code></p>
+<p><code>:only-of-type</code></p>
+<p><code>:optional</code></p>
+<p><code>:out-of-range</code></p>
+<p><code>:read-only</code></p>
+<p><code>:read-write</code></p>
+<p><code>:required</code></p>
+<p><code>:right</code></p>
+<p><code>:root</code></p>
+<p><code>:scope</code></p>
+<p><code>:target</code></p>
+<p><code>:valid</code></p>
+<p><code>:visited</code></p>
+<h3 id="伪元素"><a href="#伪元素" class="headerlink" title="伪元素"></a>伪元素</h3><p><code>伪元素（Pseudo-element）</code>跟伪类很像，但它们又有不同的地方。它们都是关键字，但这次伪元素前缀是两个冒号 (::) ， 同样是添加到选择器后面去选择某个元素的某个部分</p>
+<p><code>::after</code></p>
+<p><code>::before</code></p>
+<p><code>::first-letter</code></p>
+<p><code>::first-line</code></p>
+<p><code>::selection</code></p>
+<p><code>::backdrop</code></p>
+<p>CSS标准规定了first-line必须出现在最内层的块级元素之内。</p>
+<h4 id="CSS声明：属性和值"><a href="#CSS声明：属性和值" class="headerlink" title="CSS声明：属性和值"></a>CSS声明：属性和值</h4><p>在CSS Variable 标准中，以双中划线开头的属性被当做变量，与之配合的是var函数</p>
+<pre><code class="css">:root {
+  --main-color: #06c;
+  --accent-color: #006;
+}
+/* The rest of the CSS file */
+#foo h1 {
+  color: var(--main-color);
+}
+</code></pre>
+<h4 id="CSS支持一些特定的计算函数"><a href="#CSS支持一些特定的计算函数" class="headerlink" title="CSS支持一些特定的计算函数"></a>CSS支持一些特定的计算函数</h4><p><code>calc()</code> 支持不同单位混合运算<br><code>max()</code><br><code>min()</code><br><code>clamp()</code> 给一个值限定一个范围，超出范围外则使用范围的最大或者最小值<br><code>attr()</code> 允许css接受属性值的控制</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/12/05/Array-length-doesn-t-work/" rel="next" title="array.length doesn't work?">
+                <i class="fa fa-chevron-left"></i> array.length doesn't work?
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/03/20/规则/" rel="prev" title="css中的@规则">
+                css中的@规则 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Rachel</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">16</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#伪类（Pseudo-class）"><span class="nav-number">1.</span> <span class="nav-text">伪类（Pseudo-class）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#伪元素"><span class="nav-number">2.</span> <span class="nav-text">伪元素</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#CSS声明：属性和值"><span class="nav-number">2.1.</span> <span class="nav-text">CSS声明：属性和值</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#CSS支持一些特定的计算函数"><span class="nav-number">2.2.</span> <span class="nav-text">CSS支持一些特定的计算函数</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Rachel</span>
+
+  
+
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.0.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.0.0"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.0.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.0.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.0.0"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

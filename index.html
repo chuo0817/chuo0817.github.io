@@ -1,0 +1,1968 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=6.0.0" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.0.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.0.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.0.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.0.0" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT">
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="head标签：必须包含一个title，只能有一个 元素 title标签:title作为元信息，可能会被收藏、推送微博卡片等 尽量完整概括整个内容 元素指定用于一个文档中包含的所有相对URL的基本URL。 meta标签: 一组键值对，一种通用的元信息表示标签 ，head里可以有多个meta标签   &amp;lt;meta name=application-name content=&amp;quot;lsForu">
+<meta property="og:type" content="article">
+<meta property="og:title" content="HTML中的header你了解多少？">
+<meta property="og:url" content="https://chuo0817.github.io/2019/03/25/HTML中的header你了解多少？/index.html">
+<meta property="og:site_name" content="RachelSpace">
+<meta property="og:description" content="head标签：必须包含一个title，只能有一个 元素 title标签:title作为元信息，可能会被收藏、推送微博卡片等 尽量完整概括整个内容 元素指定用于一个文档中包含的所有相对URL的基本URL。 meta标签: 一组键值对，一种通用的元信息表示标签 ，head里可以有多个meta标签   &amp;lt;meta name=application-name content=&amp;quot;lsForu">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-04-22T10:25:13.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="HTML中的header你了解多少？">
+<meta name="twitter:description" content="head标签：必须包含一个title，只能有一个 元素 title标签:title作为元信息，可能会被收藏、推送微博卡片等 尽量完整概括整个内容 元素指定用于一个文档中包含的所有相对URL的基本URL。 meta标签: 一组键值对，一种通用的元信息表示标签 ，head里可以有多个meta标签   &amp;lt;meta name=application-name content=&amp;quot;lsForu">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '6.0.0',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://chuo0817.github.io/2019/03/25/HTML中的header你了解多少？/">
+
+
+
+
+
+  <title>RachelSpace</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="default">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left 
+  page-home">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"> <div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">RachelSpace</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            Archives
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+  <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://chuo0817.github.io/2019/03/25/HTML中的header你了解多少？/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Rachel">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="RachelSpace">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/03/25/HTML中的header你了解多少？/" itemprop="url">HTML中的header你了解多少？</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-03-25T18:26:10+08:00">2019-03-25</time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="head标签："><a href="#head标签：" class="headerlink" title="head标签："></a>head标签：</h3><p>必须包含一个title，只能有一个<base> 元素</p>
+<h3 id="title标签"><a href="#title标签" class="headerlink" title="title标签:"></a>title标签:</h3><p>title作为元信息，可能会被收藏、推送微博卡片等 尽量完整概括整个内容</p>
+<p><base>元素指定用于一个文档中包含的所有相对URL的基本URL。</p>
+<h3 id="meta标签"><a href="#meta标签" class="headerlink" title="meta标签:"></a>meta标签:</h3><ul>
+<li><p>一组键值对，一种通用的元信息表示标签 ，head里可以有多个meta标签</p>
+<pre><code class="javascript">  &lt;meta name=application-name content=&quot;lsForums&quot;&gt;
+</code></pre>
+<p><code>meta</code>标签也可以添加<code>charset</code>属性，就无需再有<code>name</code>和<code>content</code>，<code>charset</code>型<code>meta</code> 标签描述了HTML文档自身的编码形式，一般放在head的第一个。</p>
+<p>一般情况下，http服务端会通过http头来指定正确的编码方式，但是特殊情况用file协议打开一个HTML文件，则没有http，此时<code>charset</code> <code>meta</code>就非常重要了</p>
+</li>
+<li><p>具有<code>http-equiv</code>属性的<code>meta</code> </p>
+<p>表示 执行一个命令，这样的<code>meta</code>标签可以不需要<code>name</code>属性了</p>
+<p>eg: 相当于添加了<code>content-type</code>这个http头，并且指定了http编码方式</p>
+<pre><code class="javascript">&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+</code></pre>
+<p>除了<code>content-type</code> 还有以下几种命令:</p>
+<p><code>content-language</code> 指定内容的语言</p>
+<p><code>default-style</code> 指定默认样式表</p>
+<p><code>refresh</code> 刷新 (content 为刷新秒数)</p>
+<p><code>set-cookie</code>模拟http头<code>set-cookie</code>，设置<code>cookie</code></p>
+<p><code>X-ua-compatible</code>模拟http头<code>x-ua-compatible</code>声明ua兼容性</p>
+<p><code>content-security-policy</code>模拟http头content-security-policy声明内容安全策略</p>
+</li>
+<li><p>name为viewport的meta</p>
+<p>移动端开发</p>
+<pre><code class="javascript">&lt;meta name=&quot;viewport&quot; content=&quot;width=500, initial-scale=1&quot;&gt;
+</code></pre>
+<p>全部属性如下</p>
+<p><code>width</code> 页面宽度，可以是具体的数字，也可以是device-width，表示跟设备宽度相等</p>
+<p><code>height</code> 页面高度，可以是具体的数字，也可以是device-height 表示跟设备高度相等</p>
+<p><code>initial-scale</code> 初始缩放比例</p>
+<p><code>maximum-scale</code> 最大缩放比例</p>
+<p><code>minimum-scale</code> 最小缩放比例</p>
+<p><code>user-scalable</code> 是否允许用户缩放</p>
+</li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://chuo0817.github.io/2019/03/21/关于协议/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Rachel">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="RachelSpace">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/03/21/关于协议/" itemprop="url">关于协议</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-03-21T13:59:54+08:00">2019-03-21</time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>HTTP是纯粹的文本协议，规定使用TCP协议来传输文本格式的应用层协议</p>
+<p><img src="https://rachel-blog.oss-cn-beijing.aliyuncs.com/2019-3/3db5e0f362bc276b83c7564430ecb0a1.jpg" alt=""></p>
+<h3 id="HTTP状态"><a href="#HTTP状态" class="headerlink" title="HTTP状态"></a>HTTP状态</h3><p><code>304 Not Modified</code>未改变，说明无需再次传输请求的内容，可以使用缓存的内容。（客户端本地已经有缓存的版本，并且在Request中告诉了服务端，当服务端通过时间或者tag发现没有更新的时候，就会返回一个不含body的304状态）</p>
+<h4 id="Request-Header"><a href="#Request-Header" class="headerlink" title="Request Header"></a>Request Header</h4><p><img src="https://rachel-blog.oss-cn-beijing.aliyuncs.com/2019-3/2be3e2457f08bdf624837dfaee01e4a2.png" alt=""></p>
+<h4 id="Response-Header"><a href="#Response-Header" class="headerlink" title="Response Header"></a>Response Header</h4><p><img src="https://rachel-blog.oss-cn-beijing.aliyuncs.com/2019-3/efdeadf27313e08bf0789a3b5480f7c9.png" alt=""></p>
+<h3 id="HTTPS"><a href="#HTTPS" class="headerlink" title="HTTPS"></a>HTTPS</h3><p>HTTPS 有两个作用，一是确定请求的目标服务端身份，二是保证传输的数据不会被网络中间节点窃听或者篡改。使用加密通道来传输HTTP的内容 ，HTTPS首先与服务端建立一条TLS加密通道，TLS构建于TCP协议之上。</p>
+<h3 id="HTTP2"><a href="#HTTP2" class="headerlink" title="HTTP2"></a>HTTP2</h3><p>一是支持服务端推送，二是支持TCP连接复用。<br>服务端提前把一部分内容推送给客户端，放入缓存当中，避免客户端请求顺序带来的并行度不高，导致的性能问题。<br>TCP连接复用，使用同一个TCP连接来传输多个HTTP请求，避免TCP连接建立时的三次握手开销，和初建TCP连接时传输窗口过小的问题。</p>
+<h4 id="页面输入url到页面渲染"><a href="#页面输入url到页面渲染" class="headerlink" title="页面输入url到页面渲染:"></a>页面输入url到页面渲染:</h4><p>HTTP请求 -&gt; 字节流 -&gt; 状态机 -&gt; 词token -&gt; 栈 -&gt; DOM树（标签的解析）（同时加载css，选择的优先级） -&gt; 排版 （布局、浮动、定位） -&gt; 渲染 -&gt; 绘制（鼠标的滚动，input等都会导致不同程度的绘制）</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://chuo0817.github.io/2019/03/20/规则/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Rachel">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="RachelSpace">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/03/20/规则/" itemprop="url">css中的@规则</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-03-20T18:05:52+08:00">2019-03-20</time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h4 id="charset"><a href="#charset" class="headerlink" title="@charset"></a>@charset</h4><p>用于提示css文件使用的字符编码方式，如果使用，必须放在最前面</p>
+<h4 id="import"><a href="#import" class="headerlink" title="@import"></a>@import</h4><p>引入css文件，<code>@charset</code>规则不会被引用，<code>@import</code>可以引入另一个文件的全部内容，还支持supports 和media query形式</p>
+<h4 id="media"><a href="#media" class="headerlink" title="@media"></a>@media</h4><p>media query使用规则，能够对设备的类型进行判断</p>
+<h4 id="page"><a href="#page" class="headerlink" title="@page"></a>@page</h4><p><code>@page</code> 规则用于在打印文档时修改某些CSS属性。你不能用<code>@page</code>规则来修改所有的CSS属性，而是只能修改<code>margin</code>,<code>orphans</code>,<code>widow</code> 和 <code>page breaks of the document</code>。对其他属性的修改是无效的。（属性有：size，bleed，marked…）</p>
+<pre><code class="css">@page vertical { 
+  size: A4 portrait;
+  }
+@page horizontal { 
+  size: A4 landscape; 
+  }
+section { 
+  page: vertical; 
+  }
+table { 
+  page: horizontal; 
+  }
+</code></pre>
+<h4 id="counter-style"><a href="#counter-style" class="headerlink" title="@counter-style"></a>@counter-style</h4><p>它让开发者可以自定义counter的样式。 一个 <code>@counter-style</code>规则 定义了如何把一个计数器的值转化为字符串表示。</p>
+<h4 id="key-frames"><a href="#key-frames" class="headerlink" title="@key-frames"></a>@key-frames</h4><p>产生一种数据，用于定义动画关键帧。</p>
+<h4 id="fontface"><a href="#fontface" class="headerlink" title="@fontface"></a>@fontface</h4><p>用于定义一种字体</p>
+<h4 id="support"><a href="#support" class="headerlink" title="@support"></a>@support</h4><p>检查环境的特性，与media比较类似，检查支持的css属性，支持逻辑与或非。eg：</p>
+<pre><code class="javascript">@supports (animation-name: test) {
+    … 
+    /* 如果支持不带前缀的animation-name,则下面指定的CSS会生效 */
+    @keyframes { /* @supports是一个CSS条件组at-rule,它可以包含其他相关的at-rules */
+      …
+    }
+}
+</code></pre>
+<h4 id="namespace"><a href="#namespace" class="headerlink" title="@namespace"></a>@namespace</h4><p>用于跟xml命名空间配合的一个规则，表示内部的css选择器全都带上特定命名空间</p>
+<h4 id="viewport"><a href="#viewport" class="headerlink" title="@viewport"></a>@viewport</h4><p>用于设置视口的一些特性，不过兼容性不好，多数时候被html的meta代替。规则让我们可以对文档的大小进行设置viewport。这个特性主要被用于移动设备，但是也可以用在支持类似“固定到边缘”等特性的桌面浏览器。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://chuo0817.github.io/2019/03/20/CSS选择器/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Rachel">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="RachelSpace">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/03/20/CSS选择器/" itemprop="url">CSS选择器</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-03-20T14:39:42+08:00">2019-03-20</time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>只有伪类可以出现在伪元素之后。</p>
+<h3 id="伪类（Pseudo-class）"><a href="#伪类（Pseudo-class）" class="headerlink" title="伪类（Pseudo-class）"></a>伪类（Pseudo-class）</h3><p>一个 CSS<code>伪类（pseudo-class）</code>是一个以冒号(:)作为前缀，被添加到一个选择器末尾的关键字，当你希望样式在特定状态下才被呈现到指定的元素时，你可以往元素的选择器后面加上对应的伪类（pseudo-class）。你可能希望某个元素在处于某种状态下呈现另一种样式，例如当鼠标悬停在元素上面时，或者当一个复选框被禁用或被勾选时，又或者当一个元素是它在 DOM 树中父元素的第一个子元素时。</p>
+<p><code>:active</code> </p>
+<p><code>:any</code> </p>
+<p><code>:checked</code></p>
+<p><code>:default</code></p>
+<p><code>:dir()</code></p>
+<p><code>:disabled</code></p>
+<p><code>:empty</code></p>
+<p><code>:enabled</code></p>
+<p><code>:first</code></p>
+<p><code>:first-child</code></p>
+<p><code>:first-of-type</code></p>
+<p><code>:fullscreen</code></p>
+<p><code>:focus</code></p>
+<p><code>:hover</code></p>
+<p><code>:indeterminate</code></p>
+<p><code>:in-range</code></p>
+<p><code>:invalid</code></p>
+<p><code>:lang()</code></p>
+<p><code>:last-child</code></p>
+<p><code>:last-of-type</code></p>
+<p><code>:left</code></p>
+<p><code>:link</code></p>
+<p><code>:not()</code></p>
+<p><code>:nth-child()</code></p>
+<p><code>:nth-last-child()</code></p>
+<p><code>:nth-last-of-type()</code></p>
+<p><code>:nth-of-type()</code></p>
+<p><code>:only-child</code></p>
+<p><code>:only-of-type</code></p>
+<p><code>:optional</code></p>
+<p><code>:out-of-range</code></p>
+<p><code>:read-only</code></p>
+<p><code>:read-write</code></p>
+<p><code>:required</code></p>
+<p><code>:right</code></p>
+<p><code>:root</code></p>
+<p><code>:scope</code></p>
+<p><code>:target</code></p>
+<p><code>:valid</code></p>
+<p><code>:visited</code></p>
+<h3 id="伪元素"><a href="#伪元素" class="headerlink" title="伪元素"></a>伪元素</h3><p><code>伪元素（Pseudo-element）</code>跟伪类很像，但它们又有不同的地方。它们都是关键字，但这次伪元素前缀是两个冒号 (::) ， 同样是添加到选择器后面去选择某个元素的某个部分</p>
+<p><code>::after</code></p>
+<p><code>::before</code></p>
+<p><code>::first-letter</code></p>
+<p><code>::first-line</code></p>
+<p><code>::selection</code></p>
+<p><code>::backdrop</code></p>
+<p>CSS标准规定了first-line必须出现在最内层的块级元素之内。</p>
+<h4 id="CSS声明：属性和值"><a href="#CSS声明：属性和值" class="headerlink" title="CSS声明：属性和值"></a>CSS声明：属性和值</h4><p>在CSS Variable 标准中，以双中划线开头的属性被当做变量，与之配合的是var函数</p>
+<pre><code class="css">:root {
+  --main-color: #06c;
+  --accent-color: #006;
+}
+/* The rest of the CSS file */
+#foo h1 {
+  color: var(--main-color);
+}
+</code></pre>
+<h4 id="CSS支持一些特定的计算函数"><a href="#CSS支持一些特定的计算函数" class="headerlink" title="CSS支持一些特定的计算函数"></a>CSS支持一些特定的计算函数</h4><p><code>calc()</code> 支持不同单位混合运算<br><code>max()</code><br><code>min()</code><br><code>clamp()</code> 给一个值限定一个范围，超出范围外则使用范围的最大或者最小值<br><code>attr()</code> 允许css接受属性值的控制</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://chuo0817.github.io/2018/12/05/Array-length-doesn-t-work/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Rachel">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="RachelSpace">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/12/05/Array-length-doesn-t-work/" itemprop="url">array.length doesn't work?</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-12-05T01:08:53+08:00">2018-12-05</time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>最近在浏览GitHub的时候发现了这样一个题</p>
+<pre><code class="javascript">var arr = [];
+arr[0]  = &#39;a&#39;;
+arr[1]  = &#39;b&#39;;
+arr.foo = &#39;c&#39;;
+alert(arr.length);
+</code></pre>
+<p>看看结果是多少？是3吗？<br><img src="https://rachel-blog.oss-cn-beijing.aliyuncs.com/2018-12/array.png" alt=""></p>
+<p>结果是2，为啥呢？ test</p>
+<p>是因为数组的原型是Object，所以可以像其他类型一样附加属性，不影响其固有性质。</p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/length" target="_blank" rel="noopener">MDN关于length的解释</a><br>其中有这么一句话:<code>But, the length property does not necessarily indicate the number of defined values in the array.</code>（但是，length属性不一定表示数组中定义的值的数量。）</p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#Relationship_between_length_and_numerical_properties" target="_blank" rel="noopener">JavaScript数组的length属性和数字属性是相互连接的。</a>几个内置方法(例如join()，slice()，indexOf()等),在调用时考虑数组长度属性的值。其他方法(例如push(),splice() )(在调用时)也会导致数组长度的变化。也就是说<code>.length</code>会获取数组中所有key为数字类型的元素的个数</p>
+<p>另参见: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys#Browser_compatibility" target="_blank" rel="noopener">Object.keys</a></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://chuo0817.github.io/2018/06/19/左耳朵耗子专栏记录/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Rachel">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="RachelSpace">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/06/19/左耳朵耗子专栏记录/" itemprop="url">左耳朵耗子专栏记录</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-06-19T18:02:09+08:00">2018-06-19</time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="程序中的错误处理"><a href="#程序中的错误处理" class="headerlink" title="程序中的错误处理"></a>程序中的错误处理</h3><ul>
+<li><p>资源的错误。当我们的代码去请求一些资源时导致的错误，比如打开一个没有权限的文件，写文件时出现的写错误，发送文件到网络端发现网络故障的错误，等等。这一类错误属于程序运行环境的问题。对于这类错误，有的，我们可以处理，有的我们则无法处理。比如，内存耗尽、栈溢出或是一些程序运行时关键性资源不能满足时，我们只能停止运行，甚至退出整个程序。</p>
+</li>
+<li><p>程序的错误。比如：空指针、非法参数等。这类是我们自己程序的错误，我们要记录下来，写入日志，最好触发监控系统报警。</p>
+</li>
+<li><p>用户的错误。比如：Bad Request、Bad Format 等这类由用户的不合法输入带来的错误。这类错误基本上是在用户的 API 层上出现的问题。比如，解析一个 XML 或 JSon 文件，或是用户输入的字段不合法之类的。对于这类问题，我们需要向用户端报错，让用户自己处理修正他们的输入或操作。然后，我们正常执行，但是需要做统计，统计相应的错误率，这样有利我们改善软件或是侦测是否有恶意的用户请求。</p>
+</li>
+</ul>
+<h3 id="错误处理的最佳实践"><a href="#错误处理的最佳实践" class="headerlink" title="错误处理的最佳实践"></a>错误处理的最佳实践</h3><ul>
+<li><p>统一分类的错误字典。无论你是使用错误码还是异常捕捉，都需要认真并统一地做好错误的分类。最好是在一个地方定义相关的错误。比如，HTTP 的 4XX 表示客户端有问题，5XX 则表示服务端有问题。也就是说，你要建立一个错误字典。</p>
+</li>
+<li><p>同类错误的定义最好是可以扩展的。这一点非常重要，而对于这一点，通过面向对象的继承或是像 Go 语言那样的接口多态可以很好地做到。这样可以方便地重用已有的代码。</p>
+</li>
+<li><p>定义错误的严重程度。比如，Fatal 表示重大错误，Error 表示资源或需求得不到满足，Warning 表示并不一定是个错误但还是需要引起注意，Info 表示不是错误只是一个信息，Debug 表示这是给内部开发人员用于调试程序的。</p>
+</li>
+<li><p>错误日志的输出最好使用错误码，而不是错误信息。打印错误日志的时候，除了要用统一的格式，最好不要用错误信息，而使用相应的错误码，错误码不一定是数字，也可以是一个能从错误字典里找到的一个唯一的可以让人读懂的关键字。这样，会非常有利于日志分析软件进行自动化监控，而不是要从错误信息中做语义分析。比如：HTTP 的日志中就会有 HTTP 的返回码，如：404。但我更推荐使用像PageNotFound这样的标识，这样人和机器都很容易处理。</p>
+</li>
+<li><p>忽略错误最好有日志。不然会给维护带来很大的麻烦。</p>
+</li>
+<li><p>对于同一个地方不停的报错，最好不要都打到日志里。不然这样会导致其它日志被淹没了，也会导致日志文件太大，最好的实践是，打出一个错误以及出现的次数。</p>
+</li>
+<li><p>不要用错误处理逻辑来处理业务逻辑。也就是说，不要使用异常捕捉这样的方式来处理业务逻辑，而是应该用条件判断。如果一个逻辑控制可以用 if - else 清楚地表达，非常不建议使用异常方式处理。异常捕捉是用来处理不期望发生的事的，而错误码则用来处理可能会发生的事。</p>
+</li>
+<li><p>对于同类的错误处理，用一样的模式。比如，对于null对象的错误，要么都用返回 null，加上条件检查的模式，要么都用抛 NullPointerException 的方式处理。不要混用，这样有助于代码规范。</p>
+</li>
+<li><p>尽可能在错误发生的地方处理错误。因为这样会让调用者变得更简单。</p>
+</li>
+<li><p>向上尽可能地返回原始的错误。如果一定要把错误返回到更高层去处理，那么，应该返回原始的错误，而不是重新发明一个错误。</p>
+</li>
+<li><p>处理错误时，总是要清理已分配的资源。这点非常关键，使用 RAII 技术，或是 try-catch-finally，或是 Go 的 defer 都可以容易地做到。</p>
+</li>
+<li><p>不推荐在循环体里处理错误。这里说的更多的情况是对于 try-catch 这种情况，对于绝大多数的情况你不需要这样做。最好把整个循环体外放在 try 语句块内，而在外面做 catch。</p>
+</li>
+<li><p>不要把大量的代码都放在一个 try 语句块内。一个 try 语句块内的语句应该是完成一个简单单一的事情。</p>
+</li>
+<li><p>为你的错误定义提供清楚的文档以及每种错误的代码示例。如果你是做 RESTful API 方面的，使用 Swagger 会帮你很容易搞定这个事。</p>
+</li>
+<li><p>对于异步的方式，推荐使用 Promise 模式处理错误。对于这一点，JavaScript 中有很好的实践。</p>
+</li>
+<li><p>对于分布式的系统，推荐使用 APM 相关的软件。尤其是使用 Zipkin 这样的服务调用跟踪的分析来关联错误。</p>
+</li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://chuo0817.github.io/2018/04/28/移动端禁止缩放/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Rachel">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="RachelSpace">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/04/28/移动端禁止缩放/" itemprop="url">移动端禁止缩放</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-04-28T15:43:01+08:00">2018-04-28</time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>###移动端禁止缩放问题</p>
+<pre><code class="javascript">&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0, user-scalable=no, /&gt;
+</code></pre>
+<p><code>user-scalable</code>标识是否允许对页面进行缩放，取值有两个yes和no。设置为no则不允许进行页面缩放了。</p>
+<p>此种方法在大多数移动端有效，但在safari失效，如果是nuxt项目新建一个plugins文件<br><img src="https://rachel-blog.oss-cn-beijing.aliyuncs.com/2018-4/201524899813_.pic.jpg" alt="Alt text"></p>
+<pre><code class="javascript">// disable-scale.js
+if (process.browser) {
+  window.onNuxtReady(app =&gt; {
+    //   禁止双击缩放
+    document.documentElement.addEventListener(
+      &#39;touchstart&#39;,
+      function(event) {
+        if (event.touches.length &gt; 1) {
+          event.preventDefault()
+        }
+      },
+      false
+    )
+    // 禁止双指缩放
+    var lastTouchEnd = 0
+    document.documentElement.addEventListener(
+      &#39;touchend&#39;,
+      function(event) {
+        var now = Date.now()
+        if (now - lastTouchEnd &lt;= 300) {
+          event.preventDefault()
+        }
+        lastTouchEnd = now
+      },
+      false
+    )
+  })
+}
+</code></pre>
+<p>在config文件里面plusgins下面加上</p>
+<pre><code class="javascript">{ src: &#39;~plugins/disable-scale&#39;, ssr: false },
+</code></pre>
+<p>就ok啦～</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://chuo0817.github.io/2018/02/07/关于import和require/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Rachel">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="RachelSpace">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/02/07/关于import和require/" itemprop="url">关于import和require</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-02-07T20:47:56+08:00">2018-02-07</time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>import是read-only的，require是load modules dynamically 二者遵循的模块标准不同，出现时间不同 搬运一下Stack Overflow上的回答<br><a href="https://stackoverflow.com/questions/31354559/using-node-js-require-vs-es6-import-export" target="_blank" rel="noopener">点击这里</a> </p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://chuo0817.github.io/2018/01/30/Javascript与Unicode、Utf-8/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Rachel">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="RachelSpace">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/01/30/Javascript与Unicode、Utf-8/" itemprop="url">Javascript与Unicode、Utf-8</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-01-30T16:34:30+08:00">2018-01-30</time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>平时工作中其实经常会看见或者听到Unicode编码，Utf-8，看了阮老师关于ES6新特性的介绍，表示字符有以下几种方法：</p>
+<pre><code class="javascript">&#39;\z&#39; === &#39;z&#39;     // true
+&#39;\172&#39; === &#39;z&#39;   // true
+&#39;\x7A&#39; === &#39;z&#39;   // true
+&#39;\u007A&#39; === &#39;z&#39; // true
+&#39;\u{7A}&#39; === &#39;z&#39; // true
+</code></pre>
+<p>突然就怀疑自己，平时表示字符用什么方式？双引号？其它的表示方式呢？字符编码是什么？大学c语言里讲的ASCII跟Unicode什么关系？于是查了一些资料，整理如下：</p>
+<h3 id="ASCII码"><a href="#ASCII码" class="headerlink" title="ASCII码"></a>ASCII码</h3><p>在计算机中，所有的数据在存储和运算时都要使用二进制数（0和1）表示，ASCII 码使用指定的7 位或8 位二进制数组合来表示128 或256 种可能的字符。标准ASCII 码也叫基础ASCII码，使用7 位二进制数（剩下的1位二进制为0）来表示所有的大写和小写字母，数字0 到9、标点符号， 以及在美式英语中使用的特殊控制字符。</p>
+<h3 id="Unicode编码"><a href="#Unicode编码" class="headerlink" title="Unicode编码"></a>Unicode编码</h3><p>如上，ASCII码只能表示英文字符或数字，那其他语言如何表示呢？中文？法语？Unicode就出现了，它是计算机科学领域里的一项业界标准。它对世界上大部分的文字系统进行了整理、编码，使得电脑可以用更为简单的方式来呈现和处理文字。</p>
+<h3 id="UTF-8"><a href="#UTF-8" class="headerlink" title="UTF-8"></a>UTF-8</h3><p>Unicode在很长一段时间内无法推广，直到互联网的出现，为解决Unicode如何在网络上传输的问题，于是面向传输的众多 UTF标准出现了，顾名思义，UTF-8就是每次8个位传输数据，而UTF-16就是每次16个位。UTF-8最大的一个特点，就是它是一种变长的编码方式。它可以使用1~4个字节表示一个符号，根据不同的符号而变化字节长度，当字符在ASCII码的范围时，就用一个字节表示，保留了ASCII字符一个字节的编码做为它的一部分，注意的是Unicode一个中文字符占2个字节，而UTF-8一个中文字符占3个字节。从Unicode到UTF-8并不是直接的对应，而是要过一些算法和规则来转换。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Unicode符号范围（十六进制）</th>
+<th style="text-align:right">UTF-8编码方式（二进制）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">0000 0000-0000 007F</td>
+<td style="text-align:right">0xxxxxxx</td>
+</tr>
+<tr>
+<td style="text-align:left">0000 0080-0000 07FF</td>
+<td style="text-align:right">110xxxxx 10xxxxxx</td>
+</tr>
+<tr>
+<td style="text-align:left">0000 0800-0000 FFFF</td>
+<td style="text-align:right">110xxxxx 10xxxxxx 10xxxxxx</td>
+</tr>
+<tr>
+<td style="text-align:left">0001 0000-0010 FFFF</td>
+<td style="text-align:right">1110xxxx 10xxxxxx 10xxxxxx 10xxxxxx</td>
+</tr>
+</tbody>
+</table>
+<p>例如：“曲”在Unicode编码为\u66f2，查表可知在第三行，66f2的二进制表示为：110 011011 110010，在表中右侧UTF-8第三排依此填入，“曲”的UTF-8编码表示为：111001101001101110110010，转成十六进制为E69BB2。</p>
+<p><a href="https://foofish.net/unicode_utf-8.html" target="_blank" rel="noopener">参考链接</a></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://chuo0817.github.io/2018/01/08/JS中最容易忽视的运算符in/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Rachel">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="RachelSpace">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/01/08/JS中最容易忽视的运算符in/" itemprop="url">JS中最容易忽视的运算符in</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-01-08T18:34:30+08:00">2018-01-08</time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>进入正题之前我们先来看下这个问题：</p>
+<pre><code>4 in [2,4,6] 
+</code></pre><p> 返回值是Boolean类型，true还是false？<br>按照“常理”大多数人会想肯定返回true啊（问了我们team的各位大佬都说是true），但是结果却是:</p>
+<pre><code class="javascript">4 in [2,4,6]  // false
+</code></pre>
+<p>为什么呢？<br>如果指定的属性在指定的对象或其原型链中，则<code>in 运算符</code>返回<code>true</code>。</p>
+<blockquote>
+<h3 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h3><p>prop in object</p>
+<h3 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h3><ul>
+<li>prop</li>
+<li>一个字符串类型或者 symbol 类型的属性名或者数组索引（非symbol类型将会强制转为字符串）。</li>
+<li>objectName</li>
+<li>检查它（或其原型链）是否包含具有指定名称的属性的对象。</li>
+</ul>
+</blockquote>
+<p><code>in</code>右操作数必须是一个对象值。如果这里的object是数组的话，我们可以将数组“看作”object，数组的索引就是key，数组中每一个元素就是每个key对应的value值，<code>‘4’</code> 表示的是数组中的索引，<code>[2,4,6]</code>的长度是3，最大索引是2，所以返回<code>false</code>。</p>
+<pre><code class="javascript">2 in [2,4,6]   // true
+0 in [2,4,6]   // true
+</code></pre>
+<p>你可以指定使用<code>String</code>构造函数创建的字符串，但不能指定字符串文字。</p>
+<pre><code class="javascript">var a = new String(&quot;sanxian&quot;);
+&quot;length&quot; in a   // true
+var b = &quot;rachel&quot;;
+&quot;length&quot; in b
+</code></pre>
+<p><code>VM2892:2 Uncaught TypeError: Cannot use &#39;in&#39; operator to search for &#39;length&#39; in rachel</code><br>如果你使用 <code>delete</code> 运算符删除了一个属性，则<code>in</code>运算符对所删除属性返回 <code>false</code>。</p>
+<pre><code class="javascript">var menu = {breakfast: &quot;soybean milk&quot;, lunch: &quot;hamburger&quot;, dinner: &quot;hotpot&quot;};
+delete menu.breakfast;
+&quot;breakfast&quot; in menu;  //false
+</code></pre>
+<p>如果你只是将一个属性的值赋值为<code>undefined</code>，而没有删除它，则 <code>in</code>运算仍然会返回<code>true</code>。</p>
+<pre><code class="javascript">var menu = {breakfast: &quot;soybean milk&quot;, lunch: &quot;hamburger&quot;, dinner: &#39;hotpot&#39;};
+menu.breakfast = undefined;
+&quot;breakfast&quot; in menu;  // true
+</code></pre>
+<p>如果一个属性是从原型链上继承来的，<code>in</code> 运算符也会返回 <code>true</code>。<br>除了数组情况下可借用<code>in</code> 操作符外，我们还可以利用<code>in</code> 的特性来简化<code>if</code>语句在多个“或”条件情况时的写法。<br>例如，下面一句：</p>
+<pre><code class="javascript">if ( foo == &#39;bar&#39; || foo == &#39;foobar&#39; || foo == &#39;foo&#39; )
+{
+//...
+}
+</code></pre>
+<p>就可以写成：</p>
+<pre><code class="javascript">if ( foo in { &#39;bar&#39;:&#39;&#39;, &#39;foobar&#39;:&#39;&#39;, &#39;foo&#39;:&#39;&#39; } )
+{
+//...
+}
+</code></pre>
+<p>判断结果相同。</p>
+<blockquote>
+<h3 id="优势"><a href="#优势" class="headerlink" title="优势"></a>优势</h3><p>a、我们就可以非常方便的利用in 来判断元素是否在对象中；<br>b、对象中检索属性，例如：o[‘oak’]，其时间复杂度为O(1)，而要在数组中找一个元素，时间复杂度为O(n)。</p>
+</blockquote>
+<p><code>不过，也不说所有的数组都可以用对象来代替的。至少，必须要求数组中元素是唯一的。</code></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+  </section>
+
+  
+  <nav class="pagination">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
+  </nav>
+
+
+
+          </div>
+          
+
+
+          
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Rachel</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">16</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Rachel</span>
+
+  
+
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.0.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.0.0"></script>
+
+
+
+  
+  
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.0.0"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
